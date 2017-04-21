@@ -5,18 +5,18 @@
 ### Boilerplate starter kit for [React Native](https://facebook.github.io/react-native/docs/getting-started.html)  + [Redux](http://redux.js.org) + [CodePush](https://github.com/Microsoft/react-native-code-push) Apps (iOS & Android) + [Sails](http://sailsjs.com/)
 
 
-#### This is a sample boilerplate react-native mobile applicatio that demonstrates authentication using a simplified version of OAuth2, with a long-live refresh token and short-live access token
+This is a sample boilerplate react-native mobile applicatio that demonstrates authentication using a simplified version of OAuth2, with a long-live refresh token and short-live access token
 
 
 ## Technologies
-*Technologies used in boilerplate application*
+Technologies used in boilerplate application*
 
-### [React Native](https://github.com/facebook/react-native)
-### [Sails](http://sailsjs.com/)
-### [NativeBase](http://nativebase.io/)
-### [Redux](http://redux.js.org)
-### [CodePush](https://github.com/Microsoft/react-native-code-push)
-### [React Native Router Flux](https://github.com/aksonov/react-native-router-flux)
+* [React Native](https://github.com/facebook/react-native)
+* [Sails](http://sailsjs.com/)
+* [NativeBase](http://nativebase.io/)
+* [Redux](http://redux.js.org)
+* [CodePush](https://github.com/Microsoft/react-native-code-push)
+* [React Native Router Flux](https://github.com/aksonov/react-native-router-flux)
 
 
 ## Installation
@@ -40,7 +40,7 @@ $ react-native link
 
 ## Run iOS
 
-*	Run the following command in your terminal
+Run the following command in your terminal
 
 ```sh
 $ react-native run-ios
@@ -48,7 +48,7 @@ $ react-native run-ios
 
 ## Run Android
 
-*	Run the following command in your terminal
+Run the following command in your terminal
 
 ```sh
 $ react-native run-android

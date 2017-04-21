@@ -1,0 +1,191 @@
+{
+  "data": {
+    "users": [
+      {
+        "email": "user1@facebook.com",
+        "firstName": "User 1",
+        "password": "$2a$10$SkI3zAT5G1ntxXjAJuHiZeo9tSqWPDpZaESaMhcgsf9LCmcwibwN2",
+        "createdAt": "2016-11-06T09:42:15.376Z",
+        "updatedAt": "2016-11-06T09:42:15.376Z",
+        "id": 1
+      },
+      {
+        "email": "user2@facebook.com",
+        "firstName": "User 2",
+        "password": "$2a$10$SkI3zAT5G1ntxXjAJuHiZeo9tSqWPDpZaESaMhcgsf9LCmcwibwN2",
+        "createdAt": "2016-11-06T09:42:15.376Z",
+        "updatedAt": "2016-11-06T09:42:15.376Z",
+        "id": 2
+      },
+      {
+        "firstName": "Shgameer",
+        "email": "hello@hovv.com",
+        "password": "$2a$10$11l3w/AqClCfBRMgOVYAKOQdzQOTfrQxLJpUdRnn6IcHCveU6Ub4W",
+        "createdAt": "2017-04-12T06:42:22.581Z",
+        "updatedAt": "2017-04-12T06:42:22.581Z",
+        "id": 3
+      },
+      {
+        "firstName": "sadsad",
+        "email": "sadsad@dfasd.com",
+        "password": "$2a$10$VfQSZtuXACDpLtHMUIjace3LyA8xVoXH5pXDTPr1sf./Gg3Bmgtx2",
+        "createdAt": "2017-04-17T11:04:18.076Z",
+        "updatedAt": "2017-04-17T11:04:18.076Z",
+        "id": 4
+      },
+      {
+        "firstName": "sadsadsadsad",
+        "email": "sadsdsadsad@ddd.com",
+        "password": "$2a$10$c02b9VYTDZEUK79RUR4lJevWaSQlUCwxdlWv5dUFJ5YczDPYR.jse",
+        "createdAt": "2017-04-17T11:04:59.474Z",
+        "updatedAt": "2017-04-17T11:04:59.474Z",
+        "id": 5
+      },
+      {
+        "firstName": "Sab User",
+        "email": "sub@gmail.com",
+        "password": "$2a$10$KeL2.Dqk3DBMMSYQEv6yoOGDKUN8/K.r4GOYhup3nqBrj0X4fHU3q",
+        "createdAt": "2017-04-21T04:20:22.276Z",
+        "updatedAt": "2017-04-21T04:20:22.276Z",
+        "id": 6
+      }
+    ],
+    "tokens": [
+      {
+        "user": 3,
+        "type": "refresh",
+        "value": "g3Hlx1sqBcBG8OYyBChFjGNfTi5Webp2",
+        "expiresAt": "2017-07-11T06:42:22.889Z",
+        "createdAt": "2017-04-12T06:42:22.893Z",
+        "id": 18
+      },
+      {
+        "user": 3,
+        "type": "access",
+        "value": "dYO8cvJk32H9DXGtZBCB2b1hmXsTHLrp",
+        "expiresAt": "2017-04-12T08:37:25.290Z",
+        "createdAt": "2017-04-12T07:37:25.295Z",
+        "id": 19
+      },
+      {
+        "user": 4,
+        "type": "access",
+        "value": "tqj5wj6qMuifanP5m5XyNPzb6Cfb0CnH",
+        "expiresAt": "2017-04-17T12:04:19.187Z",
+        "createdAt": "2017-04-17T11:04:19.190Z",
+        "id": 76
+      },
+      {
+        "user": 4,
+        "type": "refresh",
+        "value": "3LsaZQDtCajHfqqkjrUkNZBtfiRj3ikd",
+        "expiresAt": "2017-07-16T11:04:19.192Z",
+        "createdAt": "2017-04-17T11:04:19.195Z",
+        "id": 77
+      },
+      {
+        "user": 5,
+        "type": "refresh",
+        "value": "vrFrQjstR2m3EJ3JJWcO5Ws1t2We7mwS",
+        "expiresAt": "2017-07-16T11:04:59.732Z",
+        "createdAt": "2017-04-17T11:04:59.736Z",
+        "id": 79
+      },
+      {
+        "user": 5,
+        "type": "access",
+        "value": "bbg2aLyUSVTZu4IyS42A5Q22jHSMsSCc",
+        "expiresAt": "2017-04-17T12:08:43.141Z",
+        "createdAt": "2017-04-17T11:08:43.145Z",
+        "id": 84
+      }
+    ],
+    "clients": [
+      {
+        "id": "8puWuJWZYls1Ylawxm6CMiYREhsGGSyw",
+        "name": "React-Native client",
+        "createdAt": "2016-11-06T14:18:06.096Z"
+      },
+      {
+        "id": "dUBC0wsUdfmCTl6NenTYc1wCvPO2vjO5",
+        "name": "undefined",
+        "createdAt": "2017-04-18T04:30:14.138Z"
+      }
+    ]
+  },
+  "schema": {
+    "users": {
+      "email": {
+        "unique": true,
+        "type": "string"
+      },
+      "password": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      },
+      "updatedAt": {
+        "type": "datetime"
+      }
+    },
+    "tokens": {
+      "user": {
+        "type": "integer",
+        "model": "users",
+        "foreignKey": true,
+        "alias": "user"
+      },
+      "value": {
+        "type": "string"
+      },
+      "type": {
+        "type": "string",
+        "enum": [
+          "access",
+          "refresh"
+        ]
+      },
+      "expiresAt": {
+        "type": "date"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime"
+      }
+    },
+    "clients": {
+      "id": {
+        "type": "string",
+        "primaryKey": true,
+        "unique": true
+      },
+      "name": {
+        "type": "string"
+      },
+      "createdAt": {
+        "type": "datetime"
+      }
+    }
+  },
+  "counters": {
+    "users": {
+      "id": 6
+    },
+    "tokens": {
+      "id": 236
+    },
+    "clients": {}
+  }
+}
